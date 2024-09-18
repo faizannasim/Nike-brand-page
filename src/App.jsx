@@ -1,16 +1,21 @@
-import React from 'react'
-import "./App.css"
-import Navigation from './Component/Navigation'
-import Hero from './Component/Hero'
+import "./App.css";
+//import Navigation from './Component/Navigation'
+//import Hero from './Component/Hero'
+import ContactForm from "./components/ContactForm/ContactForm";
+import ContactHeader from "./components/ContactHeader/ContactHeader";
+import Navigation from "./components/Navigation/Navigation";
+import Button from "./Component/Button/Button";
 
-const App = () => {
-    return (
-        <div>
-           <Navigation />
-           <Hero/>
-        </div>
-    )
+function App() {
+  return (
+    <div>
+      <Navigation />
+      <main className="main_container">
+        <ContactHeader />
+        <ContactForm />
+      </main>
+    </div>
+  );
 }
 
-
-export default App
+export default App;
